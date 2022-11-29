@@ -1,0 +1,18 @@
+{
+"file_types": [["Zipped FastQ files .gz", "*.gz"], ["FastQ files .fastq", "*.fastq"]],
+"input_path": "",
+"num_seq_per_chunk": 100000,
+"delete_temp_files": 1,
+"fields": ["read_id", "seq", "+", "quality"], 
+"fields_to_delete": ["read_id", "+", "quality"],
+"barcode_field": "seq",
+"barcode_len": 30,
+"separator_len": 2,
+"hamming_dist": 1,
+"dropout_count_per100K": 2,
+"anchor_seq": "CTACAGCGGGCGCTACCAT",
+"output_csv_path": "results.csv",
+"output_graph_path": "graph.png",
+"show_graph": 1,
+"num_cells_seq": 50
+}
